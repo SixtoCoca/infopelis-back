@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "Hola esta es nuestro primer commit.",
   "main": "app.js",
+  "module": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node -r esm app.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,8 @@
   },
   "homepage": "https://github.com/SixtoCoca/infopeli#readme",
   "dependencies": {
+    "esm": "^3.2.25",
     "express": "^4.17.1"
-  }
+  },
+  "devDependencies": {}
 }
