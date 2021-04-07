@@ -1,8 +1,12 @@
-import express from "express";
+const express= require('express');
 
 const server = express();
 
-const port = process.env.PORT || 8000;
+
+server.use(express.static('public'));
+
+
+const port = 8000;
 
 server.listen(port, () => {
     console.log("Escuchando en http://localhost:" + port);
