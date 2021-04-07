@@ -1,0 +1,20 @@
+{
+  "name": "infopeli",
+  "version": "1.0.0",
+  "description": "Hola esta es nuestro primer commit.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SixtoCoca/infopeli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SixtoCoca/infopeli/issues"
+  },
+  "homepage": "https://github.com/SixtoCoca/infopeli#readme"
+}
