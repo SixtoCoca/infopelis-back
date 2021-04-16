@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SixtoCoca/infopeli.git"
+    "url": "git+https://github.com/SixtoCoca/infopelis-backend.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SixtoCoca/infopeli/issues"
+    "url": "https://github.com/SixtoCoca/infopelis-backend/issues"
   },
-  "homepage": "https://github.com/SixtoCoca/infopeli#readme",
+  "homepage": "https://github.com/SixtoCoca/infopelis-backend#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "esm": "^3.2.25",
