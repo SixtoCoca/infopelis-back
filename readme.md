@@ -4,16 +4,22 @@ Iniciar proyecto tanto en git como en node js
 git init      ##Iniciar repositorio git
 npm init -y   ##Iniciar proyecto nodejs
 ```
-Instalamos express(que sirve la pagina) y esm(para variables de entorno)
+Instalamos las dependecias
 ```bash
-npm install express ##Instalando express
-npm install esm ##Instalando esm
+npm install 
 ```
 
 Una vez esto ya podemos ejecutar nuestra app de manera local y sin un contenedor docker
 ```bash
 node -r esm app.js
 ```
+
+Comandos
+```bash
+npm start ## ejecutamos normal
+npm dev ##ejecutamos con nodemon
+```
+
 
 Instalamos docker ,creamos el Dockerfile, y luego creamos la imagen con el siguiente comando
 ```bash
