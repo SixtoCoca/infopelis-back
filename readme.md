@@ -11,7 +11,7 @@ npm install
 
 Una vez esto ya podemos ejecutar nuestra app de manera local y sin un contenedor docker
 ```bash
-node -r esm app.js
+node -r esm src/app.js
 ```
 
 Comandos
