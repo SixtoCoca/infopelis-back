@@ -1,7 +1,13 @@
-const express= require('express');
+import express from 'express';
+import api from './api';
+import cors from 'cors';
 
 const server = express();
 
+//Para que no nos de problemas de cors
+server.use(cors());
+//Usamos el enroutador
+server.use('/api',api);
 
 server.use(express.static('public'));
 
