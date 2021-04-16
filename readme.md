@@ -17,7 +17,7 @@ node -r esm app.js
 Comandos
 ```bash
 npm start ## ejecutamos normal
-npm dev ##ejecutamos con nodemon
+npm run dev ##ejecutamos con nodemon
 ```
 
 
