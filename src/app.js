@@ -3,6 +3,7 @@ import api from './api';
 import cors from 'cors';
 
 const server = express();
+const fetch = require("node-fetch");
 
 //Para que no nos de problemas de cors
 server.use(cors());
