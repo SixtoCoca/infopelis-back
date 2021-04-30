@@ -1,5 +1,10 @@
-async function info() {
-  const valor = "Star wars";
+async function info(nombre) {
+  var valor="";
+  if(nombre){
+    valor = nombre;
+  }else{
+    valor = "Star wars";
+  }
   const fetch = require("node-fetch");
   const respuesta = await fetch(
     "http://www.omdbapi.com/?t=" +
