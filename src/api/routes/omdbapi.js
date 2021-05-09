@@ -4,8 +4,8 @@ import service from "../../services/omdbapi";
 //Creando el enroutador
 const router = express.Router();
 
-router.get("/:nombre?", (req, res) => {
-  const respuesta = service.info(req.params["nombre"]);
+router.get("/", (req, res) => {
+  const respuesta = service.info(req.query["nombre"]);
 
   respuesta.then((val) => {
     if (respuesta === "error") {
