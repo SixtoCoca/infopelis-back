@@ -3,21 +3,24 @@ import request from "request";
 
 async function info(id) {
   var valor = "";
-  if(id){
+  if (id) {
     valor = id;
-  }else{
-    valor = "tt0076759"
+  } else {
+    valor = "tt0076759";
   }
-  var url = "https://www.imdb.com/title/"+ valor +"/?ref_=rvi_tt";
+  //filmaffinity no imdb
+  var url = "https://www.imdb.com/title/" + valor + "/?ref_=rvi_tt";
   request(url, (err, res, body) => {
     if (!err && res.statusCode == 200) {
-      const $=cheerio.load(body);
+      const $ = cheerio.load(body);
       var titulo = "";
-      titulo = $('.plot_summary');
-      console.log(titulo.children().first().text())
+      titulo = $(".plot_summary");
+      console.log(titulo.children().first().text());
       return titulo;
     }
   });
+
+
 }
 
 const service = {

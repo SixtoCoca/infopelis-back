@@ -1,5 +1,5 @@
 import express from "express";
-import service from "../../services/omdbapi";
+import service from "../../services/movie";
 
 //Creando el enroutador
 const router = express.Router();
