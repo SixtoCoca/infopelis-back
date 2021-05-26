@@ -1,6 +1,8 @@
 import cheerio from "cheerio";
 import axios from "axios";
 import fetch from "node-fetch";
+import database from "./db.js";
+
 
 async function info(nombre) {
   //omdbapi
@@ -64,6 +66,8 @@ async function info(nombre) {
     };
 
     await web(url);
+
+
     respuestaApi = {
       id: id,
       response: true,
@@ -83,6 +87,8 @@ async function info(nombre) {
       review2: reviews.eq(1).children().first().text(),
       review3: reviews.eq(2).children().first().text(),
     };
+    database.ref(respuestaApi.title).set(respuestaApi);
+
   } else {
     respuestaApi = {
       response: false,
@@ -98,3 +104,16 @@ const service = {
 };
 
 export default service;
+
+/*
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.6.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.6.2/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+*/
