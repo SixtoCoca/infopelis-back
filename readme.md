@@ -1,9 +1,4 @@
 # Iniciar proyecto
-Iniciar proyecto tanto en git como en node js
-```bash
-git init      ##Iniciar repositorio git
-npm init -y   ##Iniciar proyecto nodejs
-```
 Instalamos las dependecias
 ```bash
 npm install 

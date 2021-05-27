@@ -1,16 +1,14 @@
-import express from 'express';
-import api from './api';
-import cors from 'cors';
-
+import express from "express";
+import api from "./api";
+import cors from "cors";
 const server = express();
-const fetch = require("node-fetch");
 
 //Para que no nos de problemas de cors
 server.use(cors());
 //Usamos el enroutador
-server.use('/api', api);
-
+server.use("/api", api);
+console.log("uwu");
 const port = process.env.PORT || 8000;
 server.listen(port, () => {
-    console.log(`Escuchando en http://localhost:${port}`);
+  console.log(`Escuchando en http://localhost:${port}`);
 });
